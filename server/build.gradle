@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'server.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    implementation 'com.corundumstudio.socketio:netty-socketio:1.7.12'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:7.4.1.jre12'
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
